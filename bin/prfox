@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+// @package    Prfox PHP-Framework
+// @author     pixelFox skyisboss@gmail.com
+// @link       https://github.com/skyisboss/Prfox
+// @copyright  Copyright (c) 2015-2018 
+// @license    http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Swoole 应用
+
+require './../vendor/autoload.php';
+$result = (new Prfox\Swoole\Console(dirname(__DIR__)))->run();
+die($result);
